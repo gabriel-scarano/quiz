@@ -7,7 +7,8 @@ export default function Questoes(req: NextApiRequest, res: NextApiResponse) {
 
   if (unicaQuestaoOuNada.length === 1) {
     const questaoSelecionada = unicaQuestaoOuNada[0].embaralharRespostas();
-    res.status(200).json(questaoSelecionada.paraObjeto());
+    const obj = questaoSelecionada.responderCom(0).paraObjeto();
+    res.status(200).json(obj);
   } else {
     res.status(204).send({})
   }
