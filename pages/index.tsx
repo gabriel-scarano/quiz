@@ -30,7 +30,7 @@ export default function Home() {
       alignItems: 'center',
       height: '100vh',
     }}>
-      <Questao valor={questao} respostaFornecida={respostaFornecida} tempoEsgotado={tempoEsgotado} />
+      <Questao valor={questao} respostaFornecida={respostaFornecida} tempoEsgotado={tempoEsgotado} tempoResposta={5} />
     </div>
   )
 }
